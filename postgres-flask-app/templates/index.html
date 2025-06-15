@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Postgres + Flask Demo</title>
+</head>
+<body>
+    <h1>Welcome to the Flask + Postgres App!</h1>
+    <form action="/add" method="post">
+        <label for="name">Enter a name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Add Name</button>
+    </form>
+    <br>
+    <a href="/list" target="_blank">See All Names</a>
+</body>
+</html>
