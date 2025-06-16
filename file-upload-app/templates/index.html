@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.light {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        body.dark {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        h1, h2 {
+            color: inherit;
+        }
+
+        input[type="file"] {
+            background-color: inherit;
+            color: inherit;
+            border: 1px solid #888;
+            padding: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        .file-list {
+            margin-top: 20px;
+        }
+
+        .file-item {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #90caf9;
+        }
+
+        a:hover {
+            color: #bbdefb;
+        }
+    </style>
+</head>
+<body class="dark">
+    <button onclick="toggleTheme()">Toggle Theme</button>
+
+    <h1>Upload a File</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if files %}
+    <div class="file-list">
+        <h2>Uploaded Files:</h2>
+        <ul>
+            {% for file in files %}
+                <li class="file-item"><a href="{{ url_for('uploaded_file', filename=file) }}" target="_blank">{{ file }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% else %}
+    <p>No files uploaded yet.</p>
+    {% endif %}
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle("dark");
+            body.classList.toggle("light");
+        }
+    </script>
+</body>
+</html>
