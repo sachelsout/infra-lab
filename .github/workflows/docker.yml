@@ -35,4 +35,4 @@ jobs:
       with:
         context: ./file-upload-app
         push: true
-        tags: ghcr.io/${{ github.actor }}/file-upload-app:latest
+        tags: ghcr.io/sachelsout/file-upload-app:latest
