@@ -33,6 +33,6 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
       with:
-        context: .
+        context: ./file-upload-app
         push: true
         tags: ghcr.io/${{ github.repository }}:latest
