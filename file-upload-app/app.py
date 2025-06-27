@@ -2,7 +2,7 @@ import os
 from flask import Flask, request, redirect, render_template, send_from_directory
 from werkzeug.utils import secure_filename
 
-UPLOAD_FOLDER = os.getenv("UPLOAD_FOLDER", "/uploads")
+UPLOAD_FOLDER = os.getenv("UPLOAD_FOLDER", "uploads")
 ALLOWED_EXTENSIONS = {"txt", "pdf", "png", "jpg", "jpeg", "gif"}
 
 app = Flask(__name__)
