@@ -1,71 +1,49 @@
 # 🧱 infra-lab: My 3-Month Infra Engineering Journey
 
-This repository documents my **3-month journey to learn Infrastructure Engineering** through a series of hands-on projects. Each folder represents a day's dedicated project, starting from Docker fundamentals to integrating databases and static file handling.
+This repository documents my **3-month journey to learn Infrastructure Engineering** through a series of hands-on projects. Each folder represents a day's dedicated project, starting from Docker fundamentals to integrating databases, CI/CD, and more.
 
 ---
 
-## 🔧 Projects Overview (Days 1–7)
+## ✅ Week 1: Docker, Flask, Redis, Postgres Basics
 
-### 1. [flask-docker-app](https://github.com/sachelsout/infra-lab/tree/main/flask-docker-app)
-**A simple Flask web app containerized using Docker.**  
-📚 Learned how to create Dockerfiles and expose Flask apps through containers.
-
----
-
-### 2. [flask-ml-docker-app](https://github.com/sachelsout/infra-lab/tree/main/flask-ml-docker-app)
-**A machine learning model (Logistic Regression on Iris dataset) exposed via a Flask API and containerized using Docker.**  
-📚 Learned model serving and reproducible ML environments.
-
----
-
-### 3. [flask-redis-compose-app](https://github.com/sachelsout/infra-lab/tree/main/flask-redis-compose-app)
-**A simple counter web app using Flask and Redis, containerized using Docker Compose.**  
-📚 Understood service orchestration using `docker-compose`.
+| Day | Project | Description |
+|-----|---------|-------------|
+| 1 | [flask-docker-app](https://github.com/sachelsout/infra-lab/tree/main/week-1/flask-docker-app) | A simple Flask web app containerized using Docker. |
+| 2 | [flask-ml-docker-app](https://github.com/sachelsout/infra-lab/tree/main/week-1/flask-ml-docker-app) | ML model (Logistic Regression) exposed via Flask, containerized using Docker. |
+| 3 | [flask-redis-compose-app](https://github.com/sachelsout/infra-lab/tree/main/week-1/flask-redis-compose-app) | Counter app using Flask + Redis with Docker Compose. |
+| 4 | [flask-redis-volume-app](https://github.com/sachelsout/infra-lab/tree/main/week-1/flask-redis-volume-app) | Redis app with Docker volume for data persistence. |
+| 5 | [postgres-flask-app](https://github.com/sachelsout/infra-lab/tree/main/week-1/postgres-flask-app) | Flask + PostgreSQL web app with Docker Compose. |
+| 6 | [file-upload-app](https://github.com/sachelsout/infra-lab/tree/main/week-1/file-upload-app) | File upload and serve app using bind mounts. |
+| 7 | [static-file-server](https://github.com/sachelsout/infra-lab/tree/main/week-1/static-file-server) | Static file server with Flask and bind mounts. |
 
 ---
 
-### 4. [flask-redis-volume-app](https://github.com/sachelsout/infra-lab/tree/main/flask-redis-volume-app)
-**A Redis-backed counter with Docker volume for data persistence.**  
-📚 Focused on Docker **volumes** and **state persistence**.
+## 🚧 Week 2: Reverse Proxy, Linux CLI, CI/CD
+
+| Day | Project | Description |
+|-----|---------|-------------|
+| 8 | [fastapi-nginx-reverse-proxy](https://github.com/sachelsout/infra-lab/tree/main/week-2/fastapi-nginx-reverse-proxy) | NGINX reverse proxy to FastAPI/Flask app + healthchecks. |
+| 9 | [linux-basics-part1](https://github.com/sachelsout/infra-lab/tree/main/week-2/linux-basics-part1) | Learned essential Linux commands, navigation, and scripting basics. |
+| 10 | [linux-basics-part2](https://github.com/sachelsout/infra-lab/tree/main/week-2/linux-basics-part2) | Advanced bash, piping, redirection, file permissions, and processes. |
+| 11 | [file-upload-app](https://github.com/sachelsout/infra-lab/tree/main/week-1/file-upload-app) + [CI/CD README](https://github.com/sachelsout/infra-lab/tree/main/week-2/cicd-github-actions) | Implemented GitHub Actions for Docker build & push. |
+| 12 | [file-upload-app](https://github.com/sachelsout/infra-lab/tree/main/week-1/file-upload-app) + [Advanced CI/CD README](https://github.com/sachelsout/infra-lab/tree/main/week-2/advanced-cicd) | Added automated tests + permission fixes using GitHub Actions. |
+| 13 | ⏳ Coming soon | Prometheus setup for monitoring containers. |
+| 14 | ⏳ Coming soon | Grafana dashboard to visualize metrics. |
 
 ---
 
-### 5. [postgres-flask-app](https://github.com/sachelsout/infra-lab/tree/main/postgres-flask-app)
-**A Flask + PostgreSQL web app using Docker Compose.**  
-📚 Integrated a real SQL database, handled form submissions, and used environment variables and database persistence.
+## 🌱 Upcoming Topics
 
----
-
-### 6. [file-upload-app](https://github.com/sachelsout/infra-lab/tree/main/file-upload-app)
-**Web app for uploading and serving files with bind mount persistence.**  
-📚 Learned Flask file handling, secure uploads, and bind mounting.
-
----
-
-### 7. [static-file-server](https://github.com/sachelsout/infra-lab/tree/main/static-file-server)
-**A static file server using Flask with bind mounts.**  
-📚 Served HTML templates and static assets (like CSS/images) with hot-reload via bind mounts.
-
----
-
-## 🌱 Ongoing Plan
-
-This is just the first week! Over the coming weeks, I’ll explore:
-
-- CI/CD workflows  
-- NGINX reverse proxies  
-- Container security  
-- Kubernetes  
-- Logging & monitoring  
-- Full-stack infra setups
-
-Stay tuned!
+- Logging, monitoring (Prometheus + Grafana)
+- Secure Docker image practices
+- Kubernetes fundamentals
+- Ingress, load balancing
+- Full-stack infra design
 
 ---
 
 ## 🔗 GitHub Repository
 
-All folders listed above are part of this repo:  
 👉 [https://github.com/sachelsout/infra-lab](https://github.com/sachelsout/infra-lab)
 
 ---
