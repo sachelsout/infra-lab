@@ -7,7 +7,7 @@ This day focused on building core skills in Linux using the command line (WSL + 
 ## 📁 Setup
 
 ```bash
-mkdir -p ~/infra-lab/day9-linux-basics && cd ~/infra-lab/day9-linux-basics
+mkdir -p ~/infra-lab/week-2/linux-basics-part1 && cd ~/infra-lab/week-2/linux-basics-part1
 ```
 
 ## 🗂️ Navigation Commands

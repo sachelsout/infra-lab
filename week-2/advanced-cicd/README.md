@@ -15,13 +15,14 @@ This project enhances the CI/CD pipeline of the existing **file-upload-app** by 
 
 ```bash
 infra-lab/
-├── file-upload-app/
-│   ├── app.py
-│   ├── Dockerfile
-│   ├── requirements.txt
-│   ├── test_app.py
-│   ├── uploads/
-│   └── ...
+├── week-1/
+│   ├── file-upload-app/
+│     ├── app.py
+│     ├── Dockerfile
+│     ├── requirements.txt
+│     ├── test_app.py
+│     ├── uploads/
+│     └── ...
 ├── .github/
 │   └── workflows/
 │       └── docker.yml
@@ -36,12 +37,12 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'file-upload-app/**'
+      - 'week-1/file-upload-app/**'
       - '.github/workflows/docker.yml'
   pull_request:
     branches: [ main ]
     paths:
-      - 'file-upload-app/**'
+      - 'week-1/file-upload-app/**'
       - '.github/workflows/docker.yml'
 permissions:
       contents: read
@@ -60,12 +61,12 @@ jobs:
         python-version: '3.10'
       
     - name: Install dependencies
-      working-directory: ./file-upload-app
+      working-directory: ./week-1/file-upload-app
       run: |
         pip install -r requirements.txt
 
     - name: Run tests
-      working-directory: ./file-upload-app
+      working-directory: ./week-1/file-upload-app
       run: |
         pytest
 
@@ -82,7 +83,7 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
       with:
-        context: ./file-upload-app
+        context: ./week-1/file-upload-app
         push: true
         tags: ghcr.io/sachelsout/file-upload-app:latest
 ```
@@ -93,7 +94,7 @@ jobs:
 - To run tests locally:
 
 ```bash
-cd file-upload-app
+cd week-1/file-upload-app
 pytest
 ```
 

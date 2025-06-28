@@ -18,11 +18,12 @@ We use **GitHub Container Registry (GHCR)** to push the Docker image automatical
 
 ```android
 infra-lab/
-├── file-upload-app/
-│ ├── app.py
-│ ├── requirements.txt
-│ ├── Dockerfile
-│ ├── ...
+├── week-1/
+│   ├── file-upload-app/
+│     ├── app.py
+│     ├── requirements.txt
+│     ├── Dockerfile
+│     ├── ...
 │
 └── .github/
     └── workflows/
@@ -37,7 +38,7 @@ infra-lab/
 Located in: `.github/workflows/docker.yml`
 
 ### ✅ Triggered On:
-- Push to `main` branch (only if changes in `file-upload-app/` or workflow file)
+- Push to `main` branch (only if changes in `week-1/file-upload-app/` or workflow file)
 - Pull requests to `main`
 
 ### 🛠️ What It Does:
@@ -83,7 +84,7 @@ You can view it under your Packages tab on GitHub
     - Fly.io
 
 ## 📂 Folder Location
-This CI/CD setup applies to the folder: ```file-upload-app/```
+This CI/CD setup applies to the folder: ```week-1/file-upload-app/```
 
 ## ✅ Outcome
 

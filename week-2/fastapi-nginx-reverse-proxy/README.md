@@ -7,7 +7,7 @@ This project demonstrates how to use **Nginx as a reverse proxy** to serve a **F
 ## 📌 Project Structure
 
 ```arduino
-day08-nginx-reverse-proxy/
+fastapi-nginx-reverse-proxy/
 ├── app/
 │ └── main.py               # FastAPI application
 │ └── Dockerfile            # FastAPI Dockerfile

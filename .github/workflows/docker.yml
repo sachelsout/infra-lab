@@ -4,12 +4,12 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'file-upload-app/**'
+      - 'week-1/file-upload-app/**'
       - '.github/workflows/docker.yml'
   pull_request:
     branches: [ main ]
     paths:
-      - 'file-upload-app/**'
+      - 'week-1/file-upload-app/**'
       - '.github/workflows/docker.yml'
 permissions:
       contents: read
@@ -28,12 +28,12 @@ jobs:
         python-version: '3.10'
       
     - name: Install dependencies
-      working-directory: ./file-upload-app
+      working-directory: ./week-1/file-upload-app
       run: |
         pip install -r requirements.txt
 
     - name: Run tests
-      working-directory: ./file-upload-app
+      working-directory: ./week-1/file-upload-app
       run: |
         pytest
 
@@ -50,6 +50,6 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v5
       with:
-        context: ./file-upload-app
+        context: ./week-1/file-upload-app
         push: true
         tags: ghcr.io/sachelsout/file-upload-app:latest
