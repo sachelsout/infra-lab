@@ -23,7 +23,8 @@ The goal was to:
 
 ```bash
 git clone https://github.com/sachelsout/infra-lab.git
-cd infra-lab/flask-docker-app
+cd infra-lab/week-1/flask-docker-app
+
 docker build -t flask-docker-app .
 docker run -p 5000:5000 flask-docker-app
 ```

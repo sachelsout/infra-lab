@@ -12,7 +12,7 @@ A machine learning model (Logistic Regression on Iris dataset) exposed via a Fla
 
 ```bash
 git clone https://github.com/sachelsout/infra-lab.git
-cd infra-lab/flask-ml-docker-app
+cd infra-lab/week-1/flask-ml-docker-app
 
 # Train the model and generate model.pkl
 python train.py

@@ -30,7 +30,7 @@ postgres-flask-app/
 
 ```bash
 git clone https://github.com/sachelsout/infra-lab.git
-cd infra-lab/postgres-flask-app
+cd infra-lab/week-1/postgres-flask-app
 ```
 
 ### 2. Start the containers

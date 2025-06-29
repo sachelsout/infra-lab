@@ -28,7 +28,7 @@ flask-redis-volume-app/
 
 ```bash
 git clone https://github.com/sachelsout/infra-lab.git
-cd infra-lab/flask-redis-volume-app
+cd infra-lab/week-1/flask-redis-volume-app
 
 # Build and run
 docker compose up --build

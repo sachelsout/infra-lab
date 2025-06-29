@@ -19,8 +19,8 @@ This project demonstrates a simple **Flask-based static file server**, built wit
 
 ### 1. Clone the Repo
 ```bash
-git clone https://github.com/sachelsout/static-file-server
-cd static-file-server
+git clone https://github.com/sachelsout/infra-lab.git
+cd infra-lab/week-1/static-file-server
 ```
 ### 2. Set Up ```.env``` File
 Create a ```.env``` file with the following:

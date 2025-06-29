@@ -37,6 +37,9 @@ file-upload-app/
 
 1. Build and start the container:
 ```bash
+git clone https://github.com/sachelsout/infra-lab.git
+cd infra-lab/week-1/file-upload-app
+
 docker-compose up --build
 ```
 2. Open your browser at:

@@ -41,10 +41,8 @@ fastapi-nginx-reverse-proxy/
 
 ```bash
 # Clone the repo from the repository
-git clone https://github.com/sachelsout/fastapi-nginx-reverse-proxy
-
-# cd to root directory
-cd fastapi-nginx-reverse-proxy
+git clone https://github.com/sachelsout/infra-lab.git
+cd infra-lab/week-2/fastapi-nginx-reverse-proxy
 
 # From project root directory
 docker-compose up --build
