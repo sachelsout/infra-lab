@@ -1,0 +1,6 @@
+- name: fastapi_dashboards
+  org_id: 1
+  folder: ''
+  type: file
+  options:
+    path: /etc/grafana/provisioning/dashboards/json
