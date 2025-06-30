@@ -28,7 +28,7 @@ This repository documents my **3-month journey to learn Infrastructure Engineeri
 | 11 | [file-upload-app](https://github.com/sachelsout/infra-lab/tree/main/week-1/file-upload-app) + [CI/CD README](https://github.com/sachelsout/infra-lab/tree/main/week-2/cicd-github-actions) | Implemented GitHub Actions for Docker build & push. |
 | 12 | [file-upload-app](https://github.com/sachelsout/infra-lab/tree/main/week-1/file-upload-app) + [Advanced CI/CD README](https://github.com/sachelsout/infra-lab/tree/main/week-2/advanced-cicd) | Added automated tests + permission fixes using GitHub Actions. |
 | 13 | [prometheus-monitoring](https://github.com/sachelsout/infra-lab/tree/main/week-2/prometheus-monitoring) | Prometheus setup for monitoring containers. |
-| 14 | ⏳ Coming soon | Grafana dashboard to visualize metrics. |
+| 14 | [grafana-monitoring](https://github.com/sachelsout/infra-lab/tree/main/week-2/grafana-monitoring) | Grafana dashboard to visualize metrics. |
 
 ---
 
