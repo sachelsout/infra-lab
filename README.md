@@ -32,6 +32,15 @@ This repository documents my **3-month journey to learn Infrastructure Engineeri
 
 ---
 
+## 🛠️ Week 3: Docker Swarm & Secrets Management
+
+| Day | Project | Description |
+|-----|---------|-------------|
+| 15 | [docker-swarm-file-upload](https://github.com/sachelsout/infra-lab/tree/main/week-3/docker-swarm-file-upload) | Converted the file upload app to run on Docker Swarm using `docker stack deploy`. |
+| 16 | [docker-secrets-env](https://github.com/sachelsout/infra-lab/tree/main/week-3/docker-secrets-env) | Managed secrets securely in Docker Swarm using `docker secret` and environment variables. |
+
+---
+
 ## 🌱 Upcoming Topics
 
 - Logging, monitoring (Prometheus + Grafana)
