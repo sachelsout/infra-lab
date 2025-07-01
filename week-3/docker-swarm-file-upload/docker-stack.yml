@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  file-upload:
+    image: rohan2304/file-upload-app:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - uploaded_data:/uploads
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+volumes:
+  uploaded_data:
