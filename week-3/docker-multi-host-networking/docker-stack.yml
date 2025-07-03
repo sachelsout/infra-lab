@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    image: rohan2304/multi-host-app:latest
+    build: ./app
+    ports:
+      - "8000:8000"
+    networks:
+      - overlay-net
+
+  redis:
+    image: redis:alpine
+    networks:
+      - overlay-net
+
+networks:
+  overlay-net:
+    driver: overlay
