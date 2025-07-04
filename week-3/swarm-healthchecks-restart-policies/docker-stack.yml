@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  fastapi-app:
+    image: rohan2304/fastapi-healthcheck:latest  # Replace with your actual image if needed
+    ports:
+      - "8000:8000"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 30s
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
