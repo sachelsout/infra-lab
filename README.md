@@ -39,6 +39,7 @@ This repository documents my **3-month journey to learn Infrastructure Engineeri
 | 15 | [docker-swarm-file-upload](https://github.com/sachelsout/infra-lab/tree/main/week-3/docker-swarm-file-upload) | Converted the file upload app to run on Docker Swarm using `docker stack deploy`. |
 | 16 | [docker-secrets-env](https://github.com/sachelsout/infra-lab/tree/main/week-3/docker-secrets-env) | Managed secrets securely in Docker Swarm using `docker secret` and environment variables. |
 | 17 | [docker-multi-host-networking](https://github.com/sachelsout/infra-lab/tree/main/week-3/docker-multi-host-networking) | Enable services to communicate across multiple Docker nodes. |
+| 18 | [swarm-healthchecks-restart-policies](https://github.com/sachelsout/infra-lab/tree/main/week-3/swarm-healthchecks-restart-policies) | Implement healthchecks and restart policies for services deployed on Docker Swarm. |
 ---
 
 ## 🌱 Upcoming Topics
