@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  file-uploader:
+    image: rohan2304/file-upload-volume:latest  # You’ll build and push this
+    ports:
+      - "8000:8000"
+    volumes:
+      - uploaded_data:/app/uploaded_files
+    deploy:
+      replicas: 1
+
+volumes:
+  uploaded_data:
