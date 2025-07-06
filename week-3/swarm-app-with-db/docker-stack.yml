@@ -19,7 +19,7 @@ services:
         constraints: [node.role == manager]
 
   fastapi:
-    image: rohan2304/swarm-blog-api:latest  # Replace after building
+    image: rohan2304/blog-fastapi:latest  # Replace after building
     ports:
       - "8000:8000"
     configs:
