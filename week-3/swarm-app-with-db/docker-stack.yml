@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: blog
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_password
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app-net
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+
+  fastapi:
+    image: rohan2304/swarm-blog-api:latest  # Replace after building
+    ports:
+      - "8000:8000"
+    configs:
+      - source: app_config
+        target: /app/app_config.env
+    secrets:
+      - db_password
+    networks:
+      - app-net
+    depends_on:
+      - postgres
+    deploy:
+      replicas: 1
+
+secrets:
+  db_password:
+    file: ./secrets/db_password.txt
+
+configs:
+  app_config:
+    file: ./configs/app_config.env
+
+volumes:
+  pgdata:
+
+networks:
+  app-net:
+    driver: overlay
