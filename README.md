@@ -40,6 +40,8 @@ This repository documents my **3-month journey to learn Infrastructure Engineeri
 | 16 | [docker-secrets-env](https://github.com/sachelsout/infra-lab/tree/main/week-3/docker-secrets-env) | Managed secrets securely in Docker Swarm using `docker secret` and environment variables. |
 | 17 | [docker-multi-host-networking](https://github.com/sachelsout/infra-lab/tree/main/week-3/docker-multi-host-networking) | Enable services to communicate across multiple Docker nodes. |
 | 18 | [swarm-healthchecks-restart-policies](https://github.com/sachelsout/infra-lab/tree/main/week-3/swarm-healthchecks-restart-policies) | Implement healthchecks and restart policies for services deployed on Docker Swarm. |
+| 19 | [docker-volumes-swarm](https://github.com/sachelsout/infra-lab/tree/main/week-3/docker-volumes-swarm) | Persist uploaded files in a FastAPI app using named Docker volumes on Docker Swarm. |
+| 20 | [swarm-app-with-db](https://github.com/sachelsout/infra-lab/tree/main/week-3/swarm-app-with-db) | A simple blog backend built with FastAPI and PostgreSQL, containerized using Docker, and deployed using Docker Swarm. |
 ---
 
 ## 🌱 Upcoming Topics
