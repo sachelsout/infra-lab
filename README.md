@@ -42,6 +42,15 @@ This repository documents my **3-month journey to learn Infrastructure Engineeri
 | 18 | [swarm-healthchecks-restart-policies](https://github.com/sachelsout/infra-lab/tree/main/week-3/swarm-healthchecks-restart-policies) | Implement healthchecks and restart policies for services deployed on Docker Swarm. |
 | 19 | [docker-volumes-swarm](https://github.com/sachelsout/infra-lab/tree/main/week-3/docker-volumes-swarm) | Persist uploaded files in a FastAPI app using named Docker volumes on Docker Swarm. |
 | 20 | [swarm-app-with-db](https://github.com/sachelsout/infra-lab/tree/main/week-3/swarm-app-with-db) | A simple blog backend built with FastAPI and PostgreSQL, containerized using Docker, and deployed using Docker Swarm. |
+
+---
+
+## 🛠️ Week 4: Kubernetes Basics
+| Day | Project | Description |
+|-----|---------|-------------|
+| 22 | [k8s-first-pod](https://github.com/sachelsout/infra-lab/tree/main/week-4/k8s-first-pod) | Deployed a single NGINX container in Kubernetes using Docker Desktop's built-in K8s cluster. |
+| 23 | [k8s-fastapi-demo](https://github.com/sachelsout/infra-lab/tree/main/week-4/k8s-fastapi-demo) | Deployed a simple FastAPI app to a Kubernetes cluster using Docker Desktop's built-in Kubernetes. |
+
 ---
 
 ## 🌱 Upcoming Topics
