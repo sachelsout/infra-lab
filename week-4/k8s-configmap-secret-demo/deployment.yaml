@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fastapi
+  template:
+    metadata:
+      labels:
+        app: fastapi
+    spec:
+      containers:
+      - name: fastapi
+        image: rohan2304/k8s-configmap-secret-demo:latest
+        ports:
+        - containerPort: 5000
+        env:
+        - name: WELCOME_MESSAGE
+          valueFrom:
+            configMapKeyRef:
+              name: fastapi-config
+              key: WELCOME_MESSAGE
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: fastapi-secret
+              key: DB_USER
+        - name: DB_PASS
+          valueFrom:
+            secretKeyRef:
+              name: fastapi-secret
+              key: DB_PASS
