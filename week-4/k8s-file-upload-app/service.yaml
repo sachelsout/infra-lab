@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: file-upload-service
+spec:
+  type: NodePort
+  selector:
+    app: file-upload
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+      nodePort: 30036  # Optional: choose any port in the 30000–32767 range
