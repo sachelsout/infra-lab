@@ -52,6 +52,7 @@ This repository documents my **3-month journey to learn Infrastructure Engineeri
 | 23 | [k8s-fastapi-demo](https://github.com/sachelsout/infra-lab/tree/main/week-4/k8s-fastapi-demo) | Deployed a simple FastAPI app to a Kubernetes cluster using Docker Desktop's built-in Kubernetes. |
 | 24 | [k8s-configmap-secret-demo](https://github.com/sachelsout/infra-lab/tree/main/week-4/k8s-configmap-secret-demo) | Using ConfigMaps and Secrets in Kubernetes to inject configuration and sensitive data into a FastAPI application. |
 | 25 | [k8s-pv-pvc-demo](https://github.com/sachelsout/infra-lab/tree/main/week-4/k8s-pv-pvc-demo) | Using PersistentVolumes (PV) and PersistentVolumeClaims (PVC) in Kubernetes with a simple FastAPI notes app. |
+| 26 | [k8s-file-upload-app](https://github.com/sachelsout/infra-lab/tree/main/week-4/k8s-file-upload-app) | Deployed a fastAPI-based file upload application to Kubernetes using a Deployment and Service. |
 
 ---
 
