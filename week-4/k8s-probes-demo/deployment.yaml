@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: probes-demo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: probes-demo
+  template:
+    metadata:
+      labels:
+        app: probes-demo
+    spec:
+      containers:
+        - name: probes-demo-container
+          image: rohan2304/k8s-probes-demo:latest
+          ports:
+            - containerPort: 5000
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: 5000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 10
