@@ -58,6 +58,14 @@ This repository documents my **3-month journey to learn Infrastructure Engineeri
 
 ---
 
+## 🛠️ Week 5: Helm, Advanced K8s, Ingress, GitOps
+| Day | Project | Description |
+|-----|---------|-------------|
+| 29 | [helm-redis-install](https://github.com/sachelsout/infra-lab/tree/main/week-5/helm-redis-install) | Helm Basics: Deploying Redis on Kubernetes. |
+| 30 | [helm-fastapi-app](https://github.com/sachelsout/infra-lab/tree/main/week-5/helm-fastapi-app) | Deploying FastAPI File Upload App on Kubernetes using Helm. |
+
+---
+
 ## 🌱 Upcoming Topics
 
 - Secure Docker image practices
