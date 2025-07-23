@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: fileupload-app
+  tag: v1
+  imagePullPolicy: Never
+
+service:
+  type: ClusterIP
+  port: 80
+
+containerPort: 8000
+
+resources: {}

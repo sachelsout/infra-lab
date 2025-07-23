@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "fileupload.fullname" . }}
+  labels:
+    app: {{ include "fileupload.name" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "fileupload.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "fileupload.name" . }}
+    spec:
+      containers:
+        - name: fileupload
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: {{ .Values.containerPort }}
